@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+  padding-top: 2.7rem;
+  padding-bottom: 14rem;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.sitenav {
+  margin-right: 3.3rem;
+
+  @include responsive(phone) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 0;
+    background-color: aqua;
+    width: 100vw;
+    text-align: center;
+    padding-top: 10rem;
+  }
+  &__list {
+    display: flex;
+
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.45;
+    color: #000;
+  }
+}
+
+.toggele-btn {
+  display: none;
+
+  @include responsive(phone) {
+    display: block;
+  }
+}
+
+.hidden {
+  display: none;
+}
