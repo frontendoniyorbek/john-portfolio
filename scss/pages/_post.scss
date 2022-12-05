@@ -1,0 +1,120 @@
+.post {
+  background: #edf7fa;
+  padding-top: 0.7rem;
+  padding-bottom: 3.2rem;
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+
+  @include responsive(phone) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 2.73;
+
+    @include responsive(tablet) {
+      font-size: 2rem;
+      line-height: 3;
+    }
+
+    @include responsive(phone) {
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 3.3;
+    }
+  }
+  &__link {
+    color: $color-secondary;
+
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+
+  &__link:hover {
+    opacity: 0.8;
+  }
+
+  &__link:active {
+    opacity: 0.6;
+  }
+}
+
+.post-cart {
+  display: flex;
+
+  @include responsive(phone) {
+    flex-direction: column;
+  }
+
+  &__info:not(:last-child) {
+    margin-right: 2rem;
+
+    @include responsive(phone) {
+      margin-right: 0;
+    }
+  }
+  &__info {
+    padding: 2.4rem 2.1rem 0.7rem 2.3rem;
+    background-color: $color-bg;
+    max-width: 418px;
+    width: 100%;
+
+    @include responsive(tablet) {
+      padding: 1.5rem 0.8rem 2.2rem 2rem;
+    }
+
+    @include responsive(phone) {
+      margin-bottom: 1.7rem;
+      padding: 1.2rem 0.8rem 2.2rem 1.9rem;
+      max-width: 354px;
+    }
+  }
+
+  &__title {
+    font-size: 2.6rem;
+    line-height: 1.46;
+    margin-bottom: 1.7rem;
+
+    @include responsive(tablet) {
+      font-size: 2.4rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+
+    @include responsive(phone) {
+      font-size: 2.2rem;
+      line-height: 1.36;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__date {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.1rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
+
+    @include responsive(phone) {
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  &__date span:nth-child(1) {
+    margin-right: 2.6rem;
+  }
+
+  &__date span:nth-child(2) {
+    margin-left: 2.6rem;
+  }
+}

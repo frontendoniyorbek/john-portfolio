@@ -328,7 +328,7 @@ a {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -418,6 +418,7 @@ h6 {
   line-height: 29px;
   padding: 0.9rem 2.1rem 1.7rem 2rem;
   background-color: #FF6464;
+  border-radius: 2px;
   cursor: pointer;
 }
 .btn:hover {
@@ -430,6 +431,18 @@ h6 {
 .header {
   padding-top: 2.7rem;
   padding-bottom: 14rem;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 2.4rem;
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    padding-top: 2rem;
+    padding-bottom: 3.3rem;
+  }
 }
 .header__container {
   display: flex;
@@ -449,7 +462,7 @@ h6 {
     height: 100vh;
     z-index: 9999;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -519,12 +532,186 @@ button {
 .hero {
   padding-bottom: 7.1rem;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-bottom: 6.2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero {
+    padding-bottom: 5.8rem;
+  }
+}
 .hero__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+.hero__info {
+  max-width: 506px;
+  width: 100%;
+}
+@media screen and (max-width: 375px) {
+  .hero__info {
+    max-width: 328px;
+    text-align: center;
+  }
+}
+.hero__info--title {
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 375px) {
+  .hero__info--title {
+    margin-bottom: 2.1rem;
+    text-align: center;
+  }
+}
+.hero__info--text {
+  margin-bottom: 3.8rem;
+}
+@media screen and (max-width: 375px) {
+  .hero__info--text {
+    margin-bottom: 2.7rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero__img-wrapper {
+    margin-bottom: 3.4rem;
+  }
+}
 
 body {
   background: #eaeaea;
+}
+
+.post {
+  background: #edf7fa;
+  padding-top: 0.7rem;
+  padding-bottom: 3.2rem;
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+@media screen and (max-width: 375px) {
+  .post-top {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.post-top__title {
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 2.73;
+}
+@media screen and (max-width: 768px) {
+  .post-top__title {
+    font-size: 2rem;
+    line-height: 3;
+  }
+}
+@media screen and (max-width: 375px) {
+  .post-top__title {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3.3;
+  }
+}
+.post-top__link {
+  color: #00A8CC;
+}
+@media screen and (max-width: 375px) {
+  .post-top__link {
+    display: none;
+  }
+}
+.post-top__link:hover {
+  opacity: 0.8;
+}
+.post-top__link:active {
+  opacity: 0.6;
+}
+
+.post-cart {
+  display: flex;
+}
+@media screen and (max-width: 375px) {
+  .post-cart {
+    flex-direction: column;
+  }
+}
+.post-cart__info:not(:last-child) {
+  margin-right: 2rem;
+}
+@media screen and (max-width: 375px) {
+  .post-cart__info:not(:last-child) {
+    margin-right: 0;
+  }
+}
+.post-cart__info {
+  padding: 2.4rem 2.1rem 0.7rem 2.3rem;
+  background-color: #ffffff;
+  max-width: 418px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .post-cart__info {
+    padding: 1.5rem 0.8rem 2.2rem 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .post-cart__info {
+    margin-bottom: 1.7rem;
+    padding: 1.2rem 0.8rem 2.2rem 1.9rem;
+    max-width: 354px;
+  }
+}
+.post-cart__title {
+  font-size: 2.6rem;
+  line-height: 1.46;
+  margin-bottom: 1.7rem;
+}
+@media screen and (max-width: 768px) {
+  .post-cart__title {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .post-cart__title {
+    font-size: 2.2rem;
+    line-height: 1.36;
+    margin-bottom: 1.2rem;
+  }
+}
+.post-cart__date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.1rem;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+@media screen and (max-width: 375px) {
+  .post-cart__date {
+    margin-bottom: 1.9rem;
+  }
+}
+.post-cart__date span:nth-child(1) {
+  margin-right: 2.6rem;
+}
+.post-cart__date span:nth-child(2) {
+  margin-left: 2.6rem;
 }/*# sourceMappingURL=main.css.map */

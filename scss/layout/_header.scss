@@ -3,6 +3,16 @@
   padding-top: 2.7rem;
   padding-bottom: 14rem;
 
+  @include responsive(tablet) {
+    padding-top: 2.4rem;
+    padding-bottom: 10rem;
+  }
+
+  @include responsive(phone) {
+    padding-top: 2rem;
+    padding-bottom: 3.3rem;
+  }
+
   &__container {
     display: flex;
     justify-content: flex-end;
@@ -21,7 +31,7 @@
     height: 100vh;
     z-index: 9999;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
