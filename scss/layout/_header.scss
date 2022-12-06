@@ -1,5 +1,4 @@
 .header {
-  // position: relative;
   padding-top: 2.7rem;
   padding-bottom: 14rem;
 
@@ -8,7 +7,7 @@
     padding-bottom: 10rem;
   }
 
-  @include responsive(phone) {
+  @include responsive(m-phone) {
     padding-top: 2rem;
     padding-bottom: 3.3rem;
   }
@@ -23,10 +22,14 @@
   padding-bottom: 10.6rem;
 }
 
+.work-detail-header {
+  padding-bottom: 7.8rem;
+}
+
 .sitenav {
   margin-right: 3.3rem;
 
-  @include responsive(phone) {
+  @include responsive(m-phone) {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -45,7 +48,7 @@
   &__list {
     display: flex;
 
-    @include responsive(phone) {
+    @include responsive(m-phone) {
       display: flex;
       flex-direction: column;
     }
@@ -61,7 +64,7 @@
     line-height: 1.45;
     color: #000;
 
-    @include responsive(phone) {
+    @include responsive(m-phone) {
       color: white;
       font-size: 3rem;
     }
@@ -83,7 +86,7 @@
 .toggele-btn {
   display: none;
 
-  @include responsive(phone) {
+  @include responsive(m-phone) {
     display: block;
     position: fixed;
     z-index: 9999;

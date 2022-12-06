@@ -1,0 +1,138 @@
+.featured-works {
+  padding-top: 1.5rem;
+  padding-bottom: 8.3rem;
+
+  @include responsive(phone) {
+    padding-top: 0.3rem;
+    padding-bottom: 15rem;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 2.73;
+    margin-bottom: 1.1rem;
+
+    @include responsive(m-tablet) {
+      text-align: center;
+    }
+
+    @include responsive(phone) {
+      margin-bottom: 0.2rem;
+      font-size: 18px;
+      line-height: 3.3;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-dark;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(m-tablet) {
+      flex-direction: column;
+    }
+
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+
+  &__info:nth-child(1) {
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__info:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &__info--img {
+    width: 246px;
+    height: 180px;
+    object-fit: contain;
+    margin-right: 1.8rem;
+
+    @include responsive(m-tablet) {
+      margin-bottom: 1.7rem;
+      margin-right: 0;
+      width: 339px;
+      height: 230px;
+    }
+
+    @include responsive(phone) {
+      margin-right: 0;
+      width: 339px;
+      height: 230px;
+    }
+  }
+
+  &__inner {
+    max-width: 594px;
+    width: 100%;
+
+    &__title {
+      margin-bottom: 0.9em;
+      font-size: 3rem;
+      line-height: 1.47;
+
+      @include responsive(phone) {
+        margin-bottom: 1.6rem;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  &__inner--info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.7rem;
+
+    @include responsive(phone) {
+      margin-bottom: 2.4rem;
+    }
+
+    &__title {
+      color: #8695a4;
+      font-size: 2rem;
+      line-height: 1.45;
+
+      @include responsive(phone) {
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__inner--info span {
+    margin-right: 2.6rem;
+    color: $color-bg;
+    background-color: $color-time-1;
+    border-radius: 1.6rem;
+    padding: 0.4rem 1rem;
+
+    @include responsive(phone) {
+      margin-right: 2.2rem;
+    }
+  }
+  &__info--border {
+    border: 1px solid #e0e0e0;
+    max-width: 858px;
+    width: 100%;
+    margin-bottom: 2.9rem;
+  }
+}
+
+.hr {
+  @include responsive(phone) {
+    display: none;
+  }
+}
