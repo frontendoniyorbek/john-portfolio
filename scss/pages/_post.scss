@@ -2,6 +2,15 @@
   background: #edf7fa;
   padding-top: 0.7rem;
   padding-bottom: 3.2rem;
+  margin-bottom: 1.5rem;
+
+  @include responsive(tablet) {
+    margin-bottom: 0.7rem;
+  }
+
+  @include responsive(phone) {
+    margin-bottom: 0.3rem;
+  }
 }
 
 .post-top {
@@ -51,7 +60,7 @@
 .post-cart {
   display: flex;
 
-  @include responsive(phone) {
+  @include responsive(m-phone) {
     flex-direction: column;
   }
 
@@ -72,8 +81,11 @@
       padding: 1.5rem 0.8rem 2.2rem 2rem;
     }
 
-    @include responsive(phone) {
+    @include responsive(m-phone) {
       margin-bottom: 1.7rem;
+    }
+
+    @include responsive(phone) {
       padding: 1.2rem 0.8rem 2.2rem 1.9rem;
       max-width: 354px;
     }
