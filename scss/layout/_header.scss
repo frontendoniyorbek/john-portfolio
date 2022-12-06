@@ -19,6 +19,10 @@
   }
 }
 
+.blog-header {
+  padding-bottom: 10.6rem;
+}
+
 .sitenav {
   margin-right: 3.3rem;
 
@@ -61,6 +65,10 @@
       color: white;
       font-size: 3rem;
     }
+  }
+
+  &__link-active {
+    color: $color-primary;
   }
 
   &__link:hover {

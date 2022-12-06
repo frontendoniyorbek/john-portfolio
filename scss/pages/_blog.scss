@@ -1,0 +1,77 @@
+.main-blog {
+  padding-bottom: 5.3rem;
+  @include responsive(phone) {
+    padding-bottom: 5.7rem;
+  }
+}
+.blog-title {
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.36;
+  margin-bottom: 5.5rem;
+
+  @include responsive(phone) {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.blog {
+  &__inner {
+    max-width: 682px;
+    width: 100%;
+
+    &__title {
+      margin-bottom: 1.6rem;
+      font-size: 3rem;
+      line-height: 1.47;
+
+      @include responsive(phone) {
+        margin-bottom: 0.5rem;
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  &__inner--info {
+    display: flex;
+    margin-bottom: 1.5rem;
+
+    @include responsive(phone) {
+      margin-bottom: 1.7rem;
+    }
+    &__title {
+      margin-left: 2rem;
+      color: #8695a4;
+      font-size: 20px;
+      line-height: 1.45;
+
+      @include responsive(phone) {
+        margin-left: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &__inner--info span {
+    margin-right: 2rem;
+
+    @include responsive(phone) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__info--border {
+    max-width: 681px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    margin-top: 2.9rem;
+    margin-bottom: 3.2rem;
+
+    @include responsive(phone) {
+      max-width: 339px;
+      margin-top: 2.4rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+}
