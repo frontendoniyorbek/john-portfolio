@@ -524,6 +524,29 @@ h6 {
   display: none;
 }
 
+.footer {
+  padding-top: 5.1rem;
+  padding-bottom: 5.4rem;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.social-networks {
+  display: flex;
+  margin-bottom: 2.6em;
+}
+.social-networks__item:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
 button {
   border: 0;
   cursor: pointer;
@@ -619,6 +642,10 @@ body {
     font-size: 18px;
     line-height: 3.3;
   }
+}
+.featured-works__link {
+  text-decoration: none;
+  color: #21243D;
 }
 .featured-works__info {
   display: flex;
